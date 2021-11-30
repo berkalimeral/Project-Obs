@@ -1,0 +1,11 @@
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\bin\Debug\LoginEkrani.exe.config
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\bin\Debug\LoginEkrani.exe
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\bin\Debug\LoginEkrani.pdb
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.csproj.AssemblyReference.cache
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Form1.resources
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Properties.Resources.resources
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.csproj.GenerateResource.cache
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.csproj.CoreCompileInputs.cache
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.exe
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.pdb
+C:\Users\Monster\Desktop\VP_Proje\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Form2.resources
