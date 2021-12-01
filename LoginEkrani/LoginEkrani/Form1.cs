@@ -22,6 +22,7 @@ namespace LoginEkrani
             Form3 form3 = new Form3();
             form3.Show();
             this.Hide();
+            // Alperen join the chet
         }
     }
 }
