@@ -23,6 +23,17 @@ namespace LoginEkrani
             Form4 form4 = new Form4();
             form4.Show();
             this.Hide();
+            form4.Location = this.Location;
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

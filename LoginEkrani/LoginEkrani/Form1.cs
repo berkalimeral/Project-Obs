@@ -22,6 +22,20 @@ namespace LoginEkrani
             Form3 form3 = new Form3();
             form3.Show();
             this.Hide();
+            form3.Location = this.Location;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 academist_login = new Form2();
+            academist_login.Show();
+            this.Hide();
+            academist_login.Location = this.Location;
         }
     }
 }

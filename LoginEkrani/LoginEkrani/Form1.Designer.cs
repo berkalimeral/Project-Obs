@@ -39,29 +39,33 @@ namespace LoginEkrani
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(89, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(150, 120);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(407, 220);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(300, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(167, 294);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button2.Location = new System.Drawing.Point(150, 381);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 30);
+            this.button2.Size = new System.Drawing.Size(125, 50);
             this.button2.TabIndex = 11;
-            this.button2.Text = "ACADEMİST";
+            this.button2.Text = "ACADEMIST";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(311, 294);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button1.Location = new System.Drawing.Point(325, 381);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 30);
+            this.button1.Size = new System.Drawing.Size(125, 50);
             this.button1.TabIndex = 10;
             this.button1.Text = "STUDENT";
             this.button1.UseVisualStyleBackColor = false;
@@ -72,12 +76,14 @@ namespace LoginEkrani
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(140)))), ((int)(((byte)(168)))));
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Student Information System";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

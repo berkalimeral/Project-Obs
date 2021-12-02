@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LoginEkrani
 {
-    public partial class Form2 : Form
+    public partial class OgrenciDersEkleme : Form
     {
-        public Form2()
+        public OgrenciDersEkleme()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

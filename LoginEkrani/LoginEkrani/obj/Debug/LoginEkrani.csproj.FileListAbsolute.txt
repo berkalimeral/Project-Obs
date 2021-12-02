@@ -35,3 +35,4 @@ C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.csproj.CoreCompileInputs.cache
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.exe
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.pdb
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.OgrenciDersEkleme.resources
