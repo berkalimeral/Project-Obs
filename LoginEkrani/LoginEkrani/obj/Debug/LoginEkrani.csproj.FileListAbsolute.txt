@@ -36,3 +36,7 @@ C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.exe
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.pdb
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.OgrenciDersEkleme.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Form5.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.OgrenciDersEkleme.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.ders_ekle_sayfasi.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.DersIslemleri.resources

@@ -21,5 +21,13 @@ namespace LoginEkrani
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form5 academist_page = new Form5();
+            academist_page.Show();
+            this.Hide();
+            academist_page.Location = this.Location;
+        }
     }
 }

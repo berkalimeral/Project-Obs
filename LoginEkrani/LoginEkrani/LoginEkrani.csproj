@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DersIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersIslemleri.Designer.cs">
+      <DependentUpon>DersIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ders_ekle_sayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ders_ekle_sayfasi.Designer.cs">
+      <DependentUpon>ders_ekle_sayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +82,12 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
     <Compile Include="OgrenciDersEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +96,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DersIslemleri.resx">
+      <DependentUpon>DersIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ders_ekle_sayfasi.resx">
+      <DependentUpon>ders_ekle_sayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OgrenciDersEkleme.resx">
       <DependentUpon>OgrenciDersEkleme.cs</DependentUpon>

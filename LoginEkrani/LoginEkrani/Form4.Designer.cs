@@ -85,13 +85,13 @@ namespace LoginEkrani
             // notlarımToolStripMenuItem
             // 
             this.notlarımToolStripMenuItem.Name = "notlarımToolStripMenuItem";
-            this.notlarımToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.notlarımToolStripMenuItem.Size = new System.Drawing.Size(183, 30);
             this.notlarımToolStripMenuItem.Text = "Notlarım";
             // 
             // devamsızlıkToolStripMenuItem
             // 
             this.devamsızlıkToolStripMenuItem.Name = "devamsızlıkToolStripMenuItem";
-            this.devamsızlıkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.devamsızlıkToolStripMenuItem.Size = new System.Drawing.Size(183, 30);
             this.devamsızlıkToolStripMenuItem.Text = "Devamsızlık";
             // 
             // öğrenciToolStripMenuItem
