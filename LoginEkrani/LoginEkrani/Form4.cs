@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace LoginEkrani
 {
-    public partial class Form3 : Form
+    public partial class Form4 : Form
     {
-        public Form3()
+        public Form4()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            Form4 form4 = new Form4();
-            form4.Show();
-            this.Hide();
         }
     }
 }
