@@ -22,3 +22,16 @@ C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkra
 C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.csproj.CoreCompileInputs.cache
 C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.exe
 C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.pdb
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\bin\Debug\LoginEkrani.exe.config
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\bin\Debug\LoginEkrani.exe
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\bin\Debug\LoginEkrani.pdb
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.csproj.AssemblyReference.cache
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Form1.resources
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Form2.resources
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Form3.resources
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Form4.resources
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Properties.Resources.resources
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.csproj.GenerateResource.cache
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.csproj.CoreCompileInputs.cache
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.exe
+C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.pdb
