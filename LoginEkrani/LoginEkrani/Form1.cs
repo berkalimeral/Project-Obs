@@ -24,6 +24,7 @@ namespace LoginEkrani
             this.Hide();
             //Merhaba Berk Ali
             //Merhaba Alperensa
+            //naber berk ali bey
         }
     }
 }
