@@ -1,7 +1,7 @@
 ﻿
 namespace LoginEkrani
 {
-    partial class OgrenciDersEkleme
+    partial class listofGrades
     {
         /// <summary>
         /// Required designer variable.
@@ -54,7 +54,7 @@ namespace LoginEkrani
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(584, 33);
-            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // anaSayfaToolStripMenuItem
@@ -130,17 +130,16 @@ namespace LoginEkrani
             this.çıkışToolStripMenuItem1.Name = "çıkışToolStripMenuItem1";
             this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(135, 30);
             this.çıkışToolStripMenuItem1.Text = "Exit";
-            this.çıkışToolStripMenuItem1.Click += new System.EventHandler(this.çıkışToolStripMenuItem1_Click);
             // 
-            // OgrenciDersEkleme
+            // listofGrades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(140)))), ((int)(((byte)(168)))));
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.menuStrip1);
-            this.Name = "OgrenciDersEkleme";
-            this.Text = "STUDENT COURSE REGISTRATION";
+            this.Name = "listofGrades";
+            this.Text = "listofGrades";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
