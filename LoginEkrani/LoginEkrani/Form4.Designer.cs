@@ -40,7 +40,10 @@ namespace LoginEkrani
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışYapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -61,8 +64,8 @@ namespace LoginEkrani
             // anaSayfaToolStripMenuItem
             // 
             this.anaSayfaToolStripMenuItem.Name = "anaSayfaToolStripMenuItem";
-            this.anaSayfaToolStripMenuItem.Size = new System.Drawing.Size(107, 29);
-            this.anaSayfaToolStripMenuItem.Text = "Ana Sayfa";
+            this.anaSayfaToolStripMenuItem.Size = new System.Drawing.Size(113, 29);
+            this.anaSayfaToolStripMenuItem.Text = "Main Page";
             this.anaSayfaToolStripMenuItem.Click += new System.EventHandler(this.anaSayfaToolStripMenuItem_Click);
             // 
             // dersİşlemleriToolStripMenuItem
@@ -72,41 +75,41 @@ namespace LoginEkrani
             this.notlarımToolStripMenuItem,
             this.devamsızlıkToolStripMenuItem});
             this.dersİşlemleriToolStripMenuItem.Name = "dersİşlemleriToolStripMenuItem";
-            this.dersİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(138, 29);
-            this.dersİşlemleriToolStripMenuItem.Text = "Ders İşlemleri";
+            this.dersİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
+            this.dersİşlemleriToolStripMenuItem.Text = "Course";
             // 
             // dersKayıtToolStripMenuItem
             // 
             this.dersKayıtToolStripMenuItem.Name = "dersKayıtToolStripMenuItem";
-            this.dersKayıtToolStripMenuItem.Size = new System.Drawing.Size(183, 30);
-            this.dersKayıtToolStripMenuItem.Text = "Ders Kayıt";
+            this.dersKayıtToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
+            this.dersKayıtToolStripMenuItem.Text = "Course Registration";
             this.dersKayıtToolStripMenuItem.Click += new System.EventHandler(this.dersKayıtToolStripMenuItem_Click);
             // 
             // notlarımToolStripMenuItem
             // 
             this.notlarımToolStripMenuItem.Name = "notlarımToolStripMenuItem";
-            this.notlarımToolStripMenuItem.Size = new System.Drawing.Size(183, 30);
-            this.notlarımToolStripMenuItem.Text = "Notlarım";
+            this.notlarımToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
+            this.notlarımToolStripMenuItem.Text = "List of Grades";
             // 
             // devamsızlıkToolStripMenuItem
             // 
             this.devamsızlıkToolStripMenuItem.Name = "devamsızlıkToolStripMenuItem";
-            this.devamsızlıkToolStripMenuItem.Size = new System.Drawing.Size(183, 30);
-            this.devamsızlıkToolStripMenuItem.Text = "Devamsızlık";
+            this.devamsızlıkToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
+            this.devamsızlıkToolStripMenuItem.Text = "Attendance Status";
             // 
             // öğrenciToolStripMenuItem
             // 
             this.öğrenciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hakkındaToolStripMenuItem});
             this.öğrenciToolStripMenuItem.Name = "öğrenciToolStripMenuItem";
-            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
-            this.öğrenciToolStripMenuItem.Text = "Öğrenci";
+            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
+            this.öğrenciToolStripMenuItem.Text = "Student";
             // 
             // hakkındaToolStripMenuItem
             // 
             this.hakkındaToolStripMenuItem.Name = "hakkındaToolStripMenuItem";
-            this.hakkındaToolStripMenuItem.Size = new System.Drawing.Size(220, 30);
-            this.hakkındaToolStripMenuItem.Text = "Öğrenci Bilgileri";
+            this.hakkındaToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
+            this.hakkındaToolStripMenuItem.Text = "Student Information";
             // 
             // çıkışToolStripMenuItem
             // 
@@ -114,21 +117,40 @@ namespace LoginEkrani
             this.çıkışYapToolStripMenuItem,
             this.çıkışToolStripMenuItem1});
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(109, 29);
-            this.çıkışToolStripMenuItem.Text = "Uygulama";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
+            this.çıkışToolStripMenuItem.Text = "Application";
             // 
             // çıkışYapToolStripMenuItem
             // 
             this.çıkışYapToolStripMenuItem.Name = "çıkışYapToolStripMenuItem";
             this.çıkışYapToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
-            this.çıkışYapToolStripMenuItem.Text = "Hakkında";
+            this.çıkışYapToolStripMenuItem.Text = "About";
+            this.çıkışYapToolStripMenuItem.Click += new System.EventHandler(this.çıkışYapToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem1
             // 
             this.çıkışToolStripMenuItem1.Name = "çıkışToolStripMenuItem1";
             this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
-            this.çıkışToolStripMenuItem1.Text = "Çıkış";
+            this.çıkışToolStripMenuItem1.Text = "Exit";
             this.çıkışToolStripMenuItem1.Click += new System.EventHandler(this.çıkışToolStripMenuItem1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(183, 87);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Location = new System.Drawing.Point(219, 320);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Hello, user!";
             // 
             // Form4
             // 
@@ -136,11 +158,14 @@ namespace LoginEkrani
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(140)))), ((int)(((byte)(168)))));
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form4";
             this.Text = "Form4";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +184,7 @@ namespace LoginEkrani
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışYapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

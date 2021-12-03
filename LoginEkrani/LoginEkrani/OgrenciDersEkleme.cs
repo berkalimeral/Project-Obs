@@ -16,5 +16,15 @@ namespace LoginEkrani
         {
             InitializeComponent();
         }
+
+        private void dersKayıtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You are already here.");
+        }
+
+        private void çıkışToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

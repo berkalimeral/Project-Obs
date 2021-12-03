@@ -85,11 +85,11 @@ namespace LoginEkrani
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(38, 155);
+            this.label4.Location = new System.Drawing.Point(42, 155);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 22);
+            this.label4.Size = new System.Drawing.Size(138, 22);
             this.label4.TabIndex = 17;
-            this.label4.Text = "Sınıf Kapasitesiı:";
+            this.label4.Text = "Sınıf Kapasitesi:";
             // 
             // textBox3
             // 
@@ -116,7 +116,7 @@ namespace LoginEkrani
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(84, 48);
+            this.label1.Location = new System.Drawing.Point(80, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 22);
             this.label1.TabIndex = 13;

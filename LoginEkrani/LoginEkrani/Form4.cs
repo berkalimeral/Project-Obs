@@ -41,5 +41,10 @@ namespace LoginEkrani
         {
             Application.Exit();
         }
+
+        private void çıkışYapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This application is developed by Alperen Sarıerikli and Berk Ali Meral.");
+        }
     }
 }

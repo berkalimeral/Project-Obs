@@ -82,7 +82,7 @@ namespace LoginEkrani
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(139, 327);
+            this.label2.Location = new System.Drawing.Point(136, 327);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 22);
             this.label2.TabIndex = 8;
@@ -92,7 +92,7 @@ namespace LoginEkrani
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(136, 285);
+            this.label1.Location = new System.Drawing.Point(133, 285);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 22);
             this.label1.TabIndex = 7;
@@ -122,7 +122,7 @@ namespace LoginEkrani
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
-            this.Text = "Academist Log In";
+            this.Text = "ACADEMIST LOG IN";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
