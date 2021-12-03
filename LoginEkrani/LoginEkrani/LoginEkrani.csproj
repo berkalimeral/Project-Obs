@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="attendance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="attendance.Designer.cs">
-      <DependentUpon>attendance.cs</DependentUpon>
-    </Compile>
     <Compile Include="DersIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,12 +88,6 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
-    <Compile Include="listofGrades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="listofGrades.Designer.cs">
-      <DependentUpon>listofGrades.cs</DependentUpon>
-    </Compile>
     <Compile Include="OgrenciDersEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,15 +96,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="studentInformation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="studentInformation.Designer.cs">
-      <DependentUpon>studentInformation.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="attendance.resx">
-      <DependentUpon>attendance.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DersIslemleri.resx">
       <DependentUpon>DersIslemleri.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,9 +117,6 @@
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="listofGrades.resx">
-      <DependentUpon>listofGrades.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="OgrenciDersEkleme.resx">
       <DependentUpon>OgrenciDersEkleme.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,9 +129,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="studentInformation.resx">
-      <DependentUpon>studentInformation.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

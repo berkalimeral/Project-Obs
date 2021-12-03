@@ -26,37 +26,5 @@ namespace LoginEkrani
         {
             Application.Exit();
         }
-
-        private void notlarımToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            listofGrades listofGrades = new listofGrades();
-            this.Hide();
-            listofGrades.Show();
-            listofGrades.Location = this.Location;
-        }
-
-        private void devamsızlıkToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            attendance attendance = new attendance();
-            attendance.Show();
-            this.Hide();
-            attendance.Location = this.Location;
-        }
-
-        private void anaSayfaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form4 anaSayfa = new Form4();
-            this.Hide();
-            anaSayfa.Show();
-            anaSayfa.Location = this.Location;
-        }
-
-        private void hakkındaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            studentInformation studentInformation = new studentInformation();
-            this.Hide();
-            studentInformation.Show();
-            studentInformation.Location = this.Location;
-        }
     }
 }

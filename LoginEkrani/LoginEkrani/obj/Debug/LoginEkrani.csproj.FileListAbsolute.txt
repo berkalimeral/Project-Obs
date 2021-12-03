@@ -43,6 +43,3 @@ C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkra
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.DersIslemleri.resources
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.ders_ekle_sayfasi.resources
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.Form5.resources
-C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.listofGrades.resources
-C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.attendance.resources
-C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.studentInformation.resources

@@ -62,7 +62,6 @@ namespace LoginEkrani
             this.anaSayfaToolStripMenuItem.Name = "anaSayfaToolStripMenuItem";
             this.anaSayfaToolStripMenuItem.Size = new System.Drawing.Size(113, 29);
             this.anaSayfaToolStripMenuItem.Text = "Main Page";
-            this.anaSayfaToolStripMenuItem.Click += new System.EventHandler(this.anaSayfaToolStripMenuItem_Click);
             // 
             // dersİşlemleriToolStripMenuItem
             // 
@@ -86,14 +85,12 @@ namespace LoginEkrani
             this.notlarımToolStripMenuItem.Name = "notlarımToolStripMenuItem";
             this.notlarımToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
             this.notlarımToolStripMenuItem.Text = "List of Grades";
-            this.notlarımToolStripMenuItem.Click += new System.EventHandler(this.notlarımToolStripMenuItem_Click);
             // 
             // devamsızlıkToolStripMenuItem
             // 
             this.devamsızlıkToolStripMenuItem.Name = "devamsızlıkToolStripMenuItem";
             this.devamsızlıkToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
             this.devamsızlıkToolStripMenuItem.Text = "Attendance Status";
-            this.devamsızlıkToolStripMenuItem.Click += new System.EventHandler(this.devamsızlıkToolStripMenuItem_Click);
             // 
             // öğrenciToolStripMenuItem
             // 
@@ -108,7 +105,6 @@ namespace LoginEkrani
             this.hakkındaToolStripMenuItem.Name = "hakkındaToolStripMenuItem";
             this.hakkındaToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
             this.hakkındaToolStripMenuItem.Text = "Student Information";
-            this.hakkındaToolStripMenuItem.Click += new System.EventHandler(this.hakkındaToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
@@ -128,7 +124,7 @@ namespace LoginEkrani
             // çıkışToolStripMenuItem1
             // 
             this.çıkışToolStripMenuItem1.Name = "çıkışToolStripMenuItem1";
-            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(135, 30);
+            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
             this.çıkışToolStripMenuItem1.Text = "Exit";
             this.çıkışToolStripMenuItem1.Click += new System.EventHandler(this.çıkışToolStripMenuItem1_Click);
             // 
