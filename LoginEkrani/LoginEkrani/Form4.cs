@@ -46,5 +46,30 @@ namespace LoginEkrani
         {
             MessageBox.Show("This application is developed by Alperen Sarıerikli and Berk Ali Meral.");
         }
+
+        private void notlarımToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listofGrades listofGrades = new listofGrades();
+            this.Hide();
+            listofGrades.Show();
+            listofGrades.Location = this.Location;
+        }
+
+        private void devamsızlıkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            attendance attendance = new attendance();
+            
+            this.Hide();
+            attendance.Show();
+            attendance.Location = this.Location;
+        }
+
+        private void hakkındaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            studentInformation studentInformation = new studentInformation();
+            this.Hide();
+            studentInformation.Show();
+            studentInformation.Location = this.Location;
+        }
     }
 }

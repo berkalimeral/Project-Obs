@@ -1,7 +1,7 @@
 ﻿
 namespace LoginEkrani
 {
-    partial class OgrenciDersEkleme
+    partial class studentInformation
     {
         /// <summary>
         /// Required designer variable.
@@ -54,7 +54,7 @@ namespace LoginEkrani
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(584, 33);
-            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // anaSayfaToolStripMenuItem
@@ -62,7 +62,6 @@ namespace LoginEkrani
             this.anaSayfaToolStripMenuItem.Name = "anaSayfaToolStripMenuItem";
             this.anaSayfaToolStripMenuItem.Size = new System.Drawing.Size(113, 29);
             this.anaSayfaToolStripMenuItem.Text = "Main Page";
-            this.anaSayfaToolStripMenuItem.Click += new System.EventHandler(this.anaSayfaToolStripMenuItem_Click);
             // 
             // dersİşlemleriToolStripMenuItem
             // 
@@ -79,21 +78,18 @@ namespace LoginEkrani
             this.dersKayıtToolStripMenuItem.Name = "dersKayıtToolStripMenuItem";
             this.dersKayıtToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
             this.dersKayıtToolStripMenuItem.Text = "Course Registration";
-            this.dersKayıtToolStripMenuItem.Click += new System.EventHandler(this.dersKayıtToolStripMenuItem_Click);
             // 
             // notlarımToolStripMenuItem
             // 
             this.notlarımToolStripMenuItem.Name = "notlarımToolStripMenuItem";
             this.notlarımToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
             this.notlarımToolStripMenuItem.Text = "List of Grades";
-            this.notlarımToolStripMenuItem.Click += new System.EventHandler(this.notlarımToolStripMenuItem_Click);
             // 
             // devamsızlıkToolStripMenuItem
             // 
             this.devamsızlıkToolStripMenuItem.Name = "devamsızlıkToolStripMenuItem";
             this.devamsızlıkToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
             this.devamsızlıkToolStripMenuItem.Text = "Attendance Status";
-            this.devamsızlıkToolStripMenuItem.Click += new System.EventHandler(this.devamsızlıkToolStripMenuItem_Click);
             // 
             // öğrenciToolStripMenuItem
             // 
@@ -108,7 +104,6 @@ namespace LoginEkrani
             this.hakkındaToolStripMenuItem.Name = "hakkındaToolStripMenuItem";
             this.hakkındaToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
             this.hakkındaToolStripMenuItem.Text = "Student Information";
-            this.hakkındaToolStripMenuItem.Click += new System.EventHandler(this.hakkındaToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
@@ -130,17 +125,16 @@ namespace LoginEkrani
             this.çıkışToolStripMenuItem1.Name = "çıkışToolStripMenuItem1";
             this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(135, 30);
             this.çıkışToolStripMenuItem1.Text = "Exit";
-            this.çıkışToolStripMenuItem1.Click += new System.EventHandler(this.çıkışToolStripMenuItem1_Click);
             // 
-            // OgrenciDersEkleme
+            // studentInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(140)))), ((int)(((byte)(168)))));
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.menuStrip1);
-            this.Name = "OgrenciDersEkleme";
-            this.Text = "STUDENT COURSE REGISTRATION";
+            this.Name = "studentInformation";
+            this.Text = "studentInformation";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

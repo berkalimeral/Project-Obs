@@ -10,34 +10,30 @@ using System.Windows.Forms;
 
 namespace LoginEkrani
 {
-    public partial class OgrenciDersEkleme : Form
+    public partial class listofGrades : Form
     {
-        public OgrenciDersEkleme()
+        public listofGrades()
         {
             InitializeComponent();
         }
 
-        private void dersKayıtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("You are already here.");
-        }
-
-        private void çıkışToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void notlarımToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            listofGrades listofGrades = new listofGrades();
+            MessageBox.Show("You are already here.");
+
+        }
+
+        private void dersKayıtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OgrenciDersEkleme ogrenciDersEkleme = new OgrenciDersEkleme();
+            ogrenciDersEkleme.Show();
             this.Hide();
-            listofGrades.Show();
-            listofGrades.Location = this.Location;
+            ogrenciDersEkleme.Location = this.Location;
         }
 
         private void devamsızlıkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            attendance attendance = new attendance();
+            attendance attendance= new attendance();
             attendance.Show();
             this.Hide();
             attendance.Location = this.Location;
