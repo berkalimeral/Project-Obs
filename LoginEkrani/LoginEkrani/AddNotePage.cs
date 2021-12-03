@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LoginEkrani
 {
-    public partial class DersIslemleri : Form
+    public partial class AddNotePage : Form
     {
-        public DersIslemleri()
+        public AddNotePage()
         {
             InitializeComponent();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void dersEkleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -25,12 +30,12 @@ namespace LoginEkrani
             ders_Ekle.Location = this.Location;
         }
 
-        private void notEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        private void dersleriListeleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddNotePage addNote = new AddNotePage();
-            addNote.Show();
-            addNote.Location = this.Location;
+            DersIslemleri dersIslemleri = new DersIslemleri();
+            dersIslemleri.Show();
             this.Hide();
+            dersIslemleri.Location = this.Location;
         }
 
         private void notlarıListeleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -41,9 +46,12 @@ namespace LoginEkrani
             this.Hide();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void görüntüleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DevamsizlikSayfasi devamsizlik = new DevamsizlikSayfasi();
+            devamsizlik.Show();
+            devamsizlik.Location = this.Location;
+            this.Hide();
         }
     }
 }

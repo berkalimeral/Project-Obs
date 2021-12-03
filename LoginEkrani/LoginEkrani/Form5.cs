@@ -24,7 +24,7 @@ namespace LoginEkrani
 
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            MessageBox.Show("This application is developed by Alperen Sarıerikli and Berk Ali Meral.");
         }
 
         private void dersEkleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -41,6 +41,35 @@ namespace LoginEkrani
             dersIslemleri.Show();
             this.Hide();
             dersIslemleri.Location = this.Location;
+        }
+
+        private void notEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddNotePage addNote = new AddNotePage();
+            addNote.Show();
+            addNote.Location = this.Location;
+            this.Hide();
+        }
+
+        private void notlarıListeleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListNotesPage listNotes = new ListNotesPage();
+            listNotes.Show();
+            listNotes.Location = this.Location;
+            this.Hide();
+        }
+
+        private void görüntüleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DevamsizlikSayfasi devamsizlik = new DevamsizlikSayfasi();
+            devamsizlik.Show();
+            devamsizlik.Location = this.Location;
+            this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

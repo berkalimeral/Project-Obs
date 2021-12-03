@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNotePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNotePage.Designer.cs">
+      <DependentUpon>AddNotePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="attendance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="ders_ekle_sayfasi.Designer.cs">
       <DependentUpon>ders_ekle_sayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevamsizlikSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevamsizlikSayfasi.Designer.cs">
+      <DependentUpon>DevamsizlikSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -94,6 +106,12 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListNotesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListNotesPage.Designer.cs">
+      <DependentUpon>ListNotesPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="listofGrades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +132,9 @@
     <Compile Include="studentInformation.Designer.cs">
       <DependentUpon>studentInformation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddNotePage.resx">
+      <DependentUpon>AddNotePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="attendance.resx">
       <DependentUpon>attendance.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ders_ekle_sayfasi.resx">
       <DependentUpon>ders_ekle_sayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevamsizlikSayfasi.resx">
+      <DependentUpon>DevamsizlikSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -137,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListNotesPage.resx">
+      <DependentUpon>ListNotesPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listofGrades.resx">
       <DependentUpon>listofGrades.cs</DependentUpon>
