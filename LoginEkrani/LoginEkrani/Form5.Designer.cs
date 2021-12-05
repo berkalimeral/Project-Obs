@@ -94,14 +94,14 @@ namespace LoginEkrani
             // notEkleToolStripMenuItem
             // 
             this.notEkleToolStripMenuItem.Name = "notEkleToolStripMenuItem";
-            this.notEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.notEkleToolStripMenuItem.Size = new System.Drawing.Size(166, 30);
             this.notEkleToolStripMenuItem.Text = "Add Note";
             this.notEkleToolStripMenuItem.Click += new System.EventHandler(this.notEkleToolStripMenuItem_Click);
             // 
             // notlarıListeleToolStripMenuItem
             // 
             this.notlarıListeleToolStripMenuItem.Name = "notlarıListeleToolStripMenuItem";
-            this.notlarıListeleToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.notlarıListeleToolStripMenuItem.Size = new System.Drawing.Size(166, 30);
             this.notlarıListeleToolStripMenuItem.Text = "List Notes";
             this.notlarıListeleToolStripMenuItem.Click += new System.EventHandler(this.notlarıListeleToolStripMenuItem_Click);
             // 
@@ -117,7 +117,7 @@ namespace LoginEkrani
             // görüntüleToolStripMenuItem
             // 
             this.görüntüleToolStripMenuItem.Name = "görüntüleToolStripMenuItem";
-            this.görüntüleToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.görüntüleToolStripMenuItem.Size = new System.Drawing.Size(125, 30);
             this.görüntüleToolStripMenuItem.Text = "View";
             this.görüntüleToolStripMenuItem.Click += new System.EventHandler(this.görüntüleToolStripMenuItem_Click);
             // 
@@ -135,14 +135,14 @@ namespace LoginEkrani
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.çıkışToolStripMenuItem.Text = "About";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -152,6 +152,7 @@ namespace LoginEkrani
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(140)))), ((int)(((byte)(168)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form5";

@@ -16,5 +16,48 @@ namespace LoginEkrani
         {
             InitializeComponent();
         }
+
+        private void dersKayıtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OgrenciDersEkleme ogrenciDersEkleme = new OgrenciDersEkleme();
+            
+            this.Hide();
+            ogrenciDersEkleme.Show();
+            ogrenciDersEkleme.Location = this.Location;
+        }
+
+        private void notlarımToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listofGrades listofGrades = new listofGrades();
+            this.Hide();
+            listofGrades.Show();
+            listofGrades.Location = this.Location;
+        }
+
+        private void devamsızlıkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            attendance attendance = new attendance();
+            this.Hide();
+            attendance.Show();
+            attendance.Location = this.Location;
+        }
+
+        private void anaSayfaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            this.Hide();
+            form4.Show();
+            form4.Location = this.Location;
+        }
+
+        private void çıkışYapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This application is developed by Alperen Sarıerikli and Berk Ali Meral.");
+        }
+
+        private void çıkışToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
