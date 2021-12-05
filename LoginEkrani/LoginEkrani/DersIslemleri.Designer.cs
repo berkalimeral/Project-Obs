@@ -46,6 +46,7 @@ namespace LoginEkrani
             this.notlarıListeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,61 +63,61 @@ namespace LoginEkrani
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button1.Location = new System.Drawing.Point(620, 102);
+            this.button1.Location = new System.Drawing.Point(620, 81);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 50);
             this.button1.TabIndex = 11;
-            this.button1.Text = "GÜNCELLE";
+            this.button1.Text = "UPDATE";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button2.Location = new System.Drawing.Point(620, 170);
+            this.button2.Location = new System.Drawing.Point(620, 145);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 50);
             this.button2.TabIndex = 12;
-            this.button2.Text = "SİL";
+            this.button2.Text = "DELETE";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(96, 120);
+            this.label3.Location = new System.Drawing.Point(76, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 22);
+            this.label3.Size = new System.Drawing.Size(125, 22);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Ders Adı:";
+            this.label3.Text = "Course Name:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(42, 173);
+            this.label4.Location = new System.Drawing.Point(66, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 22);
+            this.label4.Size = new System.Drawing.Size(135, 22);
             this.label4.TabIndex = 17;
-            this.label4.Text = "Sınıf Kapasitesi:";
+            this.label4.Text = "Class Capacity:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(186, 175);
+            this.textBox3.Location = new System.Drawing.Point(207, 175);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(173, 20);
             this.textBox3.TabIndex = 16;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(186, 122);
+            this.textBox2.Location = new System.Drawing.Point(207, 122);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(173, 20);
             this.textBox2.TabIndex = 15;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(186, 68);
+            this.textBox1.Location = new System.Drawing.Point(207, 68);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(173, 20);
             this.textBox1.TabIndex = 14;
@@ -127,9 +128,9 @@ namespace LoginEkrani
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(80, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 22);
+            this.label1.Size = new System.Drawing.Size(121, 22);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Ders Kodu:";
+            this.label1.Text = "Course Code:";
             // 
             // menuStrip1
             // 
@@ -172,21 +173,22 @@ namespace LoginEkrani
             // notEkleToolStripMenuItem
             // 
             this.notEkleToolStripMenuItem.Name = "notEkleToolStripMenuItem";
-            this.notEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.notEkleToolStripMenuItem.Size = new System.Drawing.Size(166, 30);
             this.notEkleToolStripMenuItem.Text = "Add Note";
             this.notEkleToolStripMenuItem.Click += new System.EventHandler(this.notEkleToolStripMenuItem_Click);
             // 
             // notlarıListeleToolStripMenuItem
             // 
             this.notlarıListeleToolStripMenuItem.Name = "notlarıListeleToolStripMenuItem";
-            this.notlarıListeleToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.notlarıListeleToolStripMenuItem.Size = new System.Drawing.Size(166, 30);
             this.notlarıListeleToolStripMenuItem.Text = "List Notes";
             this.notlarıListeleToolStripMenuItem.Click += new System.EventHandler(this.notlarıListeleToolStripMenuItem_Click);
             // 
             // applicationToolStripMenuItem
             // 
             this.applicationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem});
+            this.exitToolStripMenuItem,
+            this.mainMenuToolStripMenuItem});
             this.applicationToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.applicationToolStripMenuItem.Name = "applicationToolStripMenuItem";
             this.applicationToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
@@ -195,9 +197,16 @@ namespace LoginEkrani
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // mainMenuToolStripMenuItem
+            // 
+            this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(181, 30);
+            this.mainMenuToolStripMenuItem.Text = "Main Menu";
+            this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
             // DersIslemleri
             // 
@@ -243,5 +252,6 @@ namespace LoginEkrani
         private System.Windows.Forms.ToolStripMenuItem notlarıListeleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem applicationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
     }
 }
