@@ -66,17 +66,41 @@ namespace LoginEkrani
 
 
         }
+       /* public void listele()
+        {
+            listView1.Items.Clear();
+            connection.Open();
+            command = new SqlCommand("select course_id, course_name, grade_midterm, grade_final from student_course sc inner join student s on sc.student_number=s.student_id  where id=@id ", connection);
+            command.Parameters.AddWithValue("@id",ogrenci_id);
+            reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = reader["course_id"].ToString();
+                item.SubItems.Add(reader["course_name"].ToString());
+                item.SubItems.Add(reader["grade_midterm"].ToString());
+                item.SubItems.Add(reader["grade_final"].ToString());
+                
+
+                listView1.Items.Add(item);
+            }
+            connection.Close();
+        }*/
 
         private void listofGrades_Load(object sender, EventArgs e)
         {
-            connection.Open();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter("select * from student", connection);
-            DataTable dt = new DataTable();
-           
-            
-            dataAdapter.Fill(dt);
-            dataGridView1.DataSource = dt;
-            connection.Close();
+           //listele();
+        }
+
+        private void çıkışYapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This application is developed by Alperen Sarıerikli and Berk Ali Meral.");
+        }
+
+        private void çıkışToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

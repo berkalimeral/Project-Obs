@@ -19,18 +19,29 @@ namespace LoginEkrani
         }
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
         SqlCommand command;
+        SqlDataReader dataReader;
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            if (textBox1.Text=="a") {
+            /*
+            connection.Open();
+            command = new SqlCommand("SELECT username, password FROM academist WHERE username = @username AND password = @password", connection);
+            command.Parameters.AddWithValue("@username", textBox1.Text);
+            command.Parameters.AddWithValue("@password", textBox2.Text);
+            dataReader = command.ExecuteReader();
 
-
+            if (dataReader.Read())
+            {*/
                 Form4 form4 = new Form4();
                 form4.Show();
                 this.Hide();
-                form4.Location = this.Location; }
+                form4.Location = this.Location;
+            /*}
+            else
+            {
+                MessageBox.Show("Username or Password Incorrect!");
+            }*/
         }
-
+        
         private void Form3_Load(object sender, EventArgs e)
         {
             
