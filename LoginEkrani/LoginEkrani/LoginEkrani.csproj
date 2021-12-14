@@ -132,6 +132,12 @@
     <Compile Include="studentInformation.Designer.cs">
       <DependentUpon>studentInformation.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentStatic.Designer.cs">
+      <DependentUpon>StudentStatic.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddNotePage.resx">
       <DependentUpon>AddNotePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +188,9 @@
     </Compile>
     <EmbeddedResource Include="studentInformation.resx">
       <DependentUpon>studentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentStatic.resx">
+      <DependentUpon>StudentStatic.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

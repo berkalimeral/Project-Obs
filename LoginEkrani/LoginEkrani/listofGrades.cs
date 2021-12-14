@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LoginEkrani
 {
@@ -16,6 +17,8 @@ namespace LoginEkrani
         {
             InitializeComponent();
         }
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
+        SqlCommand command;
 
         private void notlarımToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -53,6 +56,27 @@ namespace LoginEkrani
             this.Hide();
             studentInformation.Show();
             studentInformation.Location = this.Location;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+            
+
+
+
+        }
+
+        private void listofGrades_Load(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("select * from student", connection);
+            DataTable dt = new DataTable();
+           
+            
+            dataAdapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            connection.Close();
         }
     }
 }

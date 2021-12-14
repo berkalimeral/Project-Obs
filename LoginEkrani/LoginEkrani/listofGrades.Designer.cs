@@ -142,6 +142,7 @@ namespace LoginEkrani
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(560, 358);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -165,6 +166,7 @@ namespace LoginEkrani
             this.Controls.Add(this.menuStrip1);
             this.Name = "listofGrades";
             this.Text = "List of Grades";
+            this.Load += new System.EventHandler(this.listofGrades_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

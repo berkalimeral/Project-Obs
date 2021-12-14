@@ -30,6 +30,10 @@ namespace LoginEkrani
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,39 +51,71 @@ namespace LoginEkrani
             this.applicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button3 = new System.Windows.Forms.Button();
+            this.absentanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(41, 236);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(718, 202);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Course ID";
+            this.columnHeader1.Width = 175;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Course Code";
+            this.columnHeader2.Width = 175;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Course Name";
+            this.columnHeader3.Width = 175;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Course Capacity";
+            this.columnHeader4.Width = 175;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button1.Location = new System.Drawing.Point(620, 81);
+            this.button1.Location = new System.Drawing.Point(620, 61);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 50);
             this.button1.TabIndex = 11;
             this.button1.Text = "UPDATE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button2.Location = new System.Drawing.Point(620, 145);
+            this.button2.Location = new System.Drawing.Point(620, 117);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 50);
             this.button2.TabIndex = 12;
             this.button2.Text = "DELETE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -137,6 +173,7 @@ namespace LoginEkrani
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dersİşlemleriToolStripMenuItem,
             this.notİşlemleriToolStripMenuItem,
+            this.absentanceToolStripMenuItem,
             this.applicationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -208,6 +245,33 @@ namespace LoginEkrani
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button3.Location = new System.Drawing.Point(620, 173);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(125, 50);
+            this.button3.TabIndex = 20;
+            this.button3.Text = "LİST";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // absentanceToolStripMenuItem
+            // 
+            this.absentanceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewToolStripMenuItem});
+            this.absentanceToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.absentanceToolStripMenuItem.Name = "absentanceToolStripMenuItem";
+            this.absentanceToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
+            this.absentanceToolStripMenuItem.Text = "Attendance";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
             // DersIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,6 +279,7 @@ namespace LoginEkrani
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(140)))), ((int)(((byte)(168)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -227,6 +292,7 @@ namespace LoginEkrani
             this.Controls.Add(this.listView1);
             this.Name = "DersIslemleri";
             this.Text = "DersIslemleri";
+            this.Load += new System.EventHandler(this.DersIslemleri_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -254,5 +320,12 @@ namespace LoginEkrani
         private System.Windows.Forms.ToolStripMenuItem applicationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolStripMenuItem absentanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
     }
 }

@@ -46,3 +46,10 @@ C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.listofGrades.resources
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.attendance.resources
 C:\Users\alper\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.studentInformation.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.AddNotePage.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.attendance.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.DevamsizlikSayfasi.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.ListNotesPage.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.listofGrades.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.studentInformation.resources
+C:\Users\Monster\Desktop\Project-Obs\LoginEkrani\LoginEkrani\obj\Debug\LoginEkrani.StudentStatic.resources

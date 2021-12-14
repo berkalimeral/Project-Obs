@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LoginEkrani
 {
@@ -17,8 +18,22 @@ namespace LoginEkrani
             InitializeComponent();
         }
 
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
+        SqlCommand command;
+
         private void button1_Click(object sender, EventArgs e)
         {
+            connection.Open();
+            command = new SqlCommand("INSERT INTO course (course_code, course_name, class_capacity) VALUES ('" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + textBox3.Text.ToString() + "')", connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+
+
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            
+
             MessageBox.Show("Yeni Ders Kaydedildi.");
         }
 
@@ -28,6 +43,11 @@ namespace LoginEkrani
             dersIslemleri.Show();
             this.Hide();
             dersIslemleri.Location = this.Location;
+        }
+
+        private void ders_ekle_sayfasi_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

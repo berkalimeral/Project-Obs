@@ -71,5 +71,12 @@ namespace LoginEkrani
         {
             Application.Exit();
         }
+
+        private void studentStaticToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StudentStatic student = new StudentStatic();
+            student.Show();
+
+        }
     }
 }

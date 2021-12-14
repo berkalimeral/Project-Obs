@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LoginEkrani
 {
@@ -15,6 +16,31 @@ namespace LoginEkrani
         public ListNotesPage()
         {
             InitializeComponent();
+        }
+
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
+        SqlCommand command;
+        SqlDataReader reader;
+        public void listele()
+        {
+            listView1.Items.Clear();
+            connection.Open();
+            command = new SqlCommand("select student_number, name, surname, grade_midterm, grade_final, course_name from student_course sc inner join student s on sc.student_number = s.student_id inner join course c on sc.course_id = c.course_id ", connection);
+            reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = reader["student_number"].ToString();
+                item.SubItems.Add(reader["name"].ToString());
+                item.SubItems.Add(reader["surname"].ToString());
+                item.SubItems.Add(reader["grade_midterm"].ToString());
+                item.SubItems.Add(reader["grade_final"].ToString());
+                item.SubItems.Add(reader["course_name"].ToString());
+
+                listView1.Items.Add(item);
+            }
+            connection.Close();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,6 +91,29 @@ namespace LoginEkrani
             form5.Show();
             this.Hide();
             form5.Location = this.Location;
+        }
+
+        private void ListNotesPage_Load(object sender, EventArgs e)
+        {
+            listele();
+        }
+
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            textBox1.Text = listView1.SelectedItems[0].SubItems[0].Text;
+            textBox2.Text = listView1.SelectedItems[0].SubItems[1].Text;
+            textBox6.Text = listView1.SelectedItems[0].SubItems[2].Text;
+            textBox3.Text = listView1.SelectedItems[0].SubItems[3].Text;
+            textBox5.Text = listView1.SelectedItems[0].SubItems[4].Text;
+            comboBox1.Text = listView1.SelectedItems[0].SubItems[5].Text;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            command = new SqlCommand("", connection);
+            command.ExecuteNonQuery();
+            connection.Close();
         }
     }
 }

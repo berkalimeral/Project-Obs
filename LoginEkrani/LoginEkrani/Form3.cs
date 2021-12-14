@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LoginEkrani
 {
@@ -16,14 +17,18 @@ namespace LoginEkrani
         {
             InitializeComponent();
         }
-
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
+        SqlCommand command;
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            if (textBox1.Text=="a") {
 
-            Form4 form4 = new Form4();
-            form4.Show();
-            this.Hide();
-            form4.Location = this.Location;
+
+                Form4 form4 = new Form4();
+                form4.Show();
+                this.Hide();
+                form4.Location = this.Location; }
         }
 
         private void Form3_Load(object sender, EventArgs e)
