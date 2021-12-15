@@ -12,8 +12,11 @@ namespace LoginEkrani
 {
     public partial class OgrenciDersEkleme : Form
     {
-        public OgrenciDersEkleme()
+
+        public int student_id;
+        public OgrenciDersEkleme(int student_id)
         {
+            this.student_id = student_id;
             InitializeComponent();
         }
 
@@ -29,7 +32,7 @@ namespace LoginEkrani
 
         private void notlarımToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            listofGrades listofGrades = new listofGrades();
+            listofGrades listofGrades = new listofGrades(student_id);
             this.Hide();
             listofGrades.Show();
             listofGrades.Location = this.Location;
@@ -53,7 +56,7 @@ namespace LoginEkrani
 
         private void hakkındaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            studentInformation studentInformation = new studentInformation();
+            studentInformation studentInformation = new studentInformation(student_id);
             this.Hide();
             studentInformation.Show();
             studentInformation.Location = this.Location;
@@ -62,6 +65,16 @@ namespace LoginEkrani
         private void çıkışYapToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This application is developed by Alperen Sarıerikli and Berk Ali Meral.");
+        }
+
+        private void OgrenciDersEkleme_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

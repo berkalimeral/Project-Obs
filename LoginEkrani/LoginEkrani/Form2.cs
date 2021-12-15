@@ -18,9 +18,19 @@ namespace LoginEkrani
             InitializeComponent();
         }
 
+       
+
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
         SqlCommand command;
         SqlDataReader dataReader;
+
+        public int id;
+
+        public int listele()
+        {
+            id = (int)(dataReader["id"]);
+            return id;
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -30,14 +40,14 @@ namespace LoginEkrani
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            command = new SqlCommand("SELECT username, password FROM academist WHERE username = @username AND password = @password", connection);
+            command = new SqlCommand("SELECT username, password, id FROM academist WHERE username = @username AND password = @password", connection);
             command.Parameters.AddWithValue("@username",textBox1.Text);
             command.Parameters.AddWithValue("@password",textBox2.Text);
             dataReader = command.ExecuteReader();
 
             if (dataReader.Read())
             {
-                Form5 academist_page = new Form5();
+                Form5 academist_page = new Form5(listele());
                 academist_page.Show();
                 this.Hide();
                 academist_page.Location = this.Location;

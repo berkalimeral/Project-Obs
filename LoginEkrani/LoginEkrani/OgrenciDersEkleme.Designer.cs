@@ -126,14 +126,14 @@ namespace LoginEkrani
             // çıkışYapToolStripMenuItem
             // 
             this.çıkışYapToolStripMenuItem.Name = "çıkışYapToolStripMenuItem";
-            this.çıkışYapToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.çıkışYapToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.çıkışYapToolStripMenuItem.Text = "About";
             this.çıkışYapToolStripMenuItem.Click += new System.EventHandler(this.çıkışYapToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem1
             // 
             this.çıkışToolStripMenuItem1.Name = "çıkışToolStripMenuItem1";
-            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
+            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(135, 30);
             this.çıkışToolStripMenuItem1.Text = "Exit";
             this.çıkışToolStripMenuItem1.Click += new System.EventHandler(this.çıkışToolStripMenuItem1_Click);
             // 
@@ -177,6 +177,7 @@ namespace LoginEkrani
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(556, 319);
             this.checkedListBox1.TabIndex = 6;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // OgrenciDersEkleme
             // 
@@ -192,6 +193,7 @@ namespace LoginEkrani
             this.Controls.Add(this.menuStrip1);
             this.Name = "OgrenciDersEkleme";
             this.Text = "STUDENT COURSE REGISTRATION";
+            this.Load += new System.EventHandler(this.OgrenciDersEkleme_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

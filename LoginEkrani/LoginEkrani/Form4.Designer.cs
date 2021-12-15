@@ -126,14 +126,14 @@ namespace LoginEkrani
             // çıkışYapToolStripMenuItem
             // 
             this.çıkışYapToolStripMenuItem.Name = "çıkışYapToolStripMenuItem";
-            this.çıkışYapToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.çıkışYapToolStripMenuItem.Size = new System.Drawing.Size(135, 30);
             this.çıkışYapToolStripMenuItem.Text = "About";
             this.çıkışYapToolStripMenuItem.Click += new System.EventHandler(this.çıkışYapToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem1
             // 
             this.çıkışToolStripMenuItem1.Name = "çıkışToolStripMenuItem1";
-            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(180, 30);
+            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(135, 30);
             this.çıkışToolStripMenuItem1.Text = "Exit";
             this.çıkışToolStripMenuItem1.Click += new System.EventHandler(this.çıkışToolStripMenuItem1_Click);
             // 
@@ -167,6 +167,7 @@ namespace LoginEkrani
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

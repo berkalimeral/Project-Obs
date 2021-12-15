@@ -13,8 +13,10 @@ namespace LoginEkrani
 {
     public partial class ders_ekle_sayfasi : Form
     {
-        public ders_ekle_sayfasi()
+        public int id;
+        public ders_ekle_sayfasi(int id)
         {
+            this.id = id;
             InitializeComponent();
         }
 
@@ -39,7 +41,7 @@ namespace LoginEkrani
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DersIslemleri dersIslemleri = new DersIslemleri();
+            DersIslemleri dersIslemleri = new DersIslemleri(id);
             dersIslemleri.Show();
             this.Hide();
             dersIslemleri.Location = this.Location;

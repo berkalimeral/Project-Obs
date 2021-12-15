@@ -237,6 +237,7 @@ namespace LoginEkrani
             this.Controls.Add(this.menuStrip1);
             this.Name = "studentInformation";
             this.Text = "STUDENT INFORMATION";
+            this.Load += new System.EventHandler(this.studentInformation_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

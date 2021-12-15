@@ -12,14 +12,17 @@ namespace LoginEkrani
 {
     public partial class studentInformation : Form
     {
-        public studentInformation()
+
+        public int student_id;
+        public studentInformation(int student_id)
         {
+            this.student_id = student_id;
             InitializeComponent();
         }
 
         private void dersKayıtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OgrenciDersEkleme ogrenciDersEkleme = new OgrenciDersEkleme();
+            OgrenciDersEkleme ogrenciDersEkleme = new OgrenciDersEkleme(student_id);
             
             this.Hide();
             ogrenciDersEkleme.Show();
@@ -28,7 +31,7 @@ namespace LoginEkrani
 
         private void notlarımToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            listofGrades listofGrades = new listofGrades();
+            listofGrades listofGrades = new listofGrades(student_id);
             this.Hide();
             listofGrades.Show();
             listofGrades.Location = this.Location;
@@ -58,6 +61,11 @@ namespace LoginEkrani
         private void çıkışToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void studentInformation_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

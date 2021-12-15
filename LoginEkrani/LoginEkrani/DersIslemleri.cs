@@ -13,8 +13,10 @@ namespace LoginEkrani
 {
     public partial class DersIslemleri : Form
     {
-        public DersIslemleri()
+        public int id;
+        public DersIslemleri(int id)
         {
+            this.id = id;
             InitializeComponent();
         }
 
@@ -43,7 +45,7 @@ namespace LoginEkrani
 
         private void dersEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ders_ekle_sayfasi ders_Ekle = new ders_ekle_sayfasi();
+            ders_ekle_sayfasi ders_Ekle = new ders_ekle_sayfasi(id);
             ders_Ekle.Show();
             this.Hide();
             ders_Ekle.Location = this.Location;
@@ -51,7 +53,7 @@ namespace LoginEkrani
 
         private void notEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddNotePage addNote = new AddNotePage();
+            AddNotePage addNote = new AddNotePage(id);
             addNote.Show();
             addNote.Location = this.Location;
             this.Hide();
@@ -59,7 +61,7 @@ namespace LoginEkrani
 
         private void notlarıListeleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ListNotesPage listNotes = new ListNotesPage();
+            ListNotesPage listNotes = new ListNotesPage(id);
             listNotes.Show();
             listNotes.Location = this.Location;
             this.Hide();
@@ -83,10 +85,10 @@ namespace LoginEkrani
             listele();
         }
 
-        int id = 0;
+        int id_1 = 0;
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            id = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            id_1 = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
             textBox1.Text = listView1.SelectedItems[0].SubItems[1].Text;
             textBox2.Text = listView1.SelectedItems[0].SubItems[2].Text;
             textBox3.Text = listView1.SelectedItems[0].SubItems[3].Text;
@@ -95,7 +97,7 @@ namespace LoginEkrani
         private void button2_Click(object sender, EventArgs e)
         {
             connection.Open();
-            command = new SqlCommand("DELETE FROM course WHERE id=(" + id + ")", connection);
+            command = new SqlCommand("DELETE FROM course WHERE id=(" + id_1 + ")", connection);
             command.ExecuteNonQuery();
             connection.Close();
 

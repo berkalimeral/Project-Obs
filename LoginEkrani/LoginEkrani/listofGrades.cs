@@ -13,8 +13,11 @@ namespace LoginEkrani
 {
     public partial class listofGrades : Form
     {
-        public listofGrades()
+
+        public int student_id;
+        public listofGrades(int student_id)
         {
+            this.student_id = student_id;
             InitializeComponent();
         }
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
@@ -28,7 +31,7 @@ namespace LoginEkrani
 
         private void dersKayıtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OgrenciDersEkleme ogrenciDersEkleme = new OgrenciDersEkleme();
+            OgrenciDersEkleme ogrenciDersEkleme = new OgrenciDersEkleme(student_id);
             ogrenciDersEkleme.Show();
             this.Hide();
             ogrenciDersEkleme.Location = this.Location;
@@ -52,7 +55,7 @@ namespace LoginEkrani
 
         private void hakkındaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            studentInformation studentInformation = new studentInformation();
+            studentInformation studentInformation = new studentInformation(student_id);
             this.Hide();
             studentInformation.Show();
             studentInformation.Location = this.Location;

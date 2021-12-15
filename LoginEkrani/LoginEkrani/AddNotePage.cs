@@ -13,8 +13,10 @@ namespace LoginEkrani
 {
     public partial class AddNotePage : Form
     {
-        public AddNotePage()
+        public int id;
+        public AddNotePage(int id)
         {
+            this.id = id;
             InitializeComponent();
         }
 
@@ -48,7 +50,7 @@ namespace LoginEkrani
 
         private void dersEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ders_ekle_sayfasi ders_Ekle = new ders_ekle_sayfasi();
+            ders_ekle_sayfasi ders_Ekle = new ders_ekle_sayfasi(id);
             ders_Ekle.Show();
             this.Hide();
             ders_Ekle.Location = this.Location;
@@ -56,7 +58,7 @@ namespace LoginEkrani
 
         private void dersleriListeleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DersIslemleri dersIslemleri = new DersIslemleri();
+            DersIslemleri dersIslemleri = new DersIslemleri(id);
             dersIslemleri.Show();
             this.Hide();
             dersIslemleri.Location = this.Location;
@@ -64,7 +66,7 @@ namespace LoginEkrani
 
         private void notlarıListeleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ListNotesPage listNotes = new ListNotesPage();
+            ListNotesPage listNotes = new ListNotesPage(id);
             listNotes.Show();
             listNotes.Location = this.Location;
             this.Hide();
@@ -72,7 +74,7 @@ namespace LoginEkrani
 
         private void görüntüleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DevamsizlikSayfasi devamsizlik = new DevamsizlikSayfasi();
+            DevamsizlikSayfasi devamsizlik = new DevamsizlikSayfasi(id);
             devamsizlik.Show();
             devamsizlik.Location = this.Location;
             this.Hide();

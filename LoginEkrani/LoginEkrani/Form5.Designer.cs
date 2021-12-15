@@ -129,7 +129,7 @@ namespace LoginEkrani
             // görüntüleToolStripMenuItem
             // 
             this.görüntüleToolStripMenuItem.Name = "görüntüleToolStripMenuItem";
-            this.görüntüleToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.görüntüleToolStripMenuItem.Size = new System.Drawing.Size(125, 30);
             this.görüntüleToolStripMenuItem.Text = "View";
             this.görüntüleToolStripMenuItem.Click += new System.EventHandler(this.görüntüleToolStripMenuItem_Click);
             // 
@@ -189,6 +189,7 @@ namespace LoginEkrani
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
