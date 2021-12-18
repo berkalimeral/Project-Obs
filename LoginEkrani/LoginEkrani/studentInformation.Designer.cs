@@ -49,8 +49,6 @@ namespace LoginEkrani
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -187,11 +185,11 @@ namespace LoginEkrani
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(52, 472);
+            this.label4.Location = new System.Drawing.Point(213, 470);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(208, 20);
+            this.label4.Size = new System.Drawing.Size(47, 20);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Average of Midterm Grades:";
+            this.label4.Text = "GPA:";
             // 
             // textBox1
             // 
@@ -221,23 +219,6 @@ namespace LoginEkrani
             this.textBox4.Size = new System.Drawing.Size(157, 20);
             this.textBox4.TabIndex = 12;
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(266, 524);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(157, 20);
-            this.textBox5.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(75, 524);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 20);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Average of Final Grades:";
-            // 
             // studentInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,8 +226,6 @@ namespace LoginEkrani
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(140)))), ((int)(((byte)(168)))));
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -290,7 +269,5 @@ namespace LoginEkrani
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
     }
 }

@@ -89,12 +89,12 @@ namespace LoginEkrani
             command = new SqlCommand("SELECT (SUM(grade_final)/count(student_number))*0.6 FROM student_course WHERE student_number=@student_id", connection);
             command.Parameters.AddWithValue("@student_id",student_id);
             int finalort =Convert.ToInt32( command.ExecuteScalar());
-            command = new SqlCommand("SELECT (SUM(grade_midterm)/count(student_number))*0.6 FROM student_course WHERE student_number=@student_id", connection);
+            command = new SqlCommand("SELECT (SUM(grade_midterm)/count(student_number))*0.4 FROM student_course WHERE student_number=@student_id", connection);
             command.Parameters.AddWithValue("@student_id", student_id);
             int midtermort = Convert.ToInt32(command.ExecuteScalar());
 
-            textBox4.Text = midtermort.ToString();
-            textBox5.Text = finalort.ToString();
+            textBox4.Text = midtermort.ToString() + finalort.ToString();
+            
 
             connection.Close();
         }
