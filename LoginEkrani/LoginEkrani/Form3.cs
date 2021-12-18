@@ -33,10 +33,10 @@ namespace LoginEkrani
         
         public void button1_Click(object sender, EventArgs e)
         {
-            
+
             connection.Open();
-            command = new SqlCommand("SELECT student_id, password FROM student WHERE student_id = @student_id AND password = @password", connection);
-            command.Parameters.AddWithValue("@student_id", textBox1.Text);
+            command = new SqlCommand("SELECT student_id, password  FROM student WHERE student_id = @username AND password = @password", connection);
+            command.Parameters.AddWithValue("@username", textBox1.Text);
             command.Parameters.AddWithValue("@password", textBox2.Text);
             dataReader = command.ExecuteReader();
 
@@ -46,14 +46,14 @@ namespace LoginEkrani
                 form4.Show();
                 this.Hide();
                 form4.Location = this.Location;
-                 
             }
             else
             {
                 MessageBox.Show("Username or Password Incorrect!");
             }
-            
-            
+            connection.Close();
+
+
         }
         
         private void Form3_Load(object sender, EventArgs e)

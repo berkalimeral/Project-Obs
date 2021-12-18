@@ -27,13 +27,13 @@ namespace LoginEkrani
         {
             listView1.Items.Clear();
             connection.Open();
-            command = new SqlCommand("SELECT * FROM course", connection);
+            command = new SqlCommand("SELECT * FROM coursee", connection);
             reader = command.ExecuteReader();
 
             while (reader.Read())
             {
                 ListViewItem item = new ListViewItem();
-                item.Text = reader["id"].ToString();
+                item.Text = reader["course_id"].ToString();
                 item.SubItems.Add(reader["course_code"].ToString());
                 item.SubItems.Add(reader["course_name"].ToString());
                 item.SubItems.Add(reader["class_capacity"].ToString());
@@ -74,7 +74,7 @@ namespace LoginEkrani
 
         private void mainMenuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
+            Form5 form5 = new Form5(id);
             form5.Show();
             this.Hide();
             form5.Location = this.Location;
@@ -85,10 +85,10 @@ namespace LoginEkrani
             listele();
         }
 
-        int id_1 = 0;
+        
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            id_1 = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            textBox4.Text = listView1.SelectedItems[0].SubItems[0].Text;
             textBox1.Text = listView1.SelectedItems[0].SubItems[1].Text;
             textBox2.Text = listView1.SelectedItems[0].SubItems[2].Text;
             textBox3.Text = listView1.SelectedItems[0].SubItems[3].Text;
@@ -97,30 +97,41 @@ namespace LoginEkrani
         private void button2_Click(object sender, EventArgs e)
         {
             connection.Open();
-            command = new SqlCommand("DELETE FROM course WHERE id=(" + id_1 + ")", connection);
+            command = new SqlCommand("DELETE FROM coursee WHERE course_id=@course_id", connection);
+            command.Parameters.AddWithValue("course_id", textBox4.Text);
             command.ExecuteNonQuery();
             connection.Close();
 
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
+            textBox4.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            command = new SqlCommand("UPDATE course SET course_code='" + textBox1.Text.ToString() + "',course_name='" + textBox2.Text.ToString() + "',class_capacity='" + textBox3.Text.ToString() + "'where id = " + id + "", connection);
+            command = new SqlCommand("UPDATE coursee SET course_code='" + textBox1.Text.ToString() + "',course_name='" + textBox2.Text.ToString() + "',class_capacity='" + textBox3.Text.ToString() + "'where course_id = " + textBox4.Text + "", connection);
             command.ExecuteNonQuery();
             connection.Close();
 
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
+            textBox4.Clear();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             listele();
+        }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DevamsizlikSayfasi devamsizlik = new DevamsizlikSayfasi(id);
+            devamsizlik.Show();
+            this.Hide();
+            devamsizlik.Location = this.Location;
         }
     }
 }

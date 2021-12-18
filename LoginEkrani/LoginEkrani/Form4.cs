@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LoginEkrani
 {
@@ -23,6 +24,10 @@ namespace LoginEkrani
           
             InitializeComponent();
         }
+
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
+        SqlCommand command;
+        SqlDataReader dataReader;
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -78,10 +83,21 @@ namespace LoginEkrani
             studentInformation.Show();
             studentInformation.Location = this.Location;
         }
-
+        string imagePath;
         private void Form4_Load(object sender, EventArgs e)
         {
+            connection.Open();
+            command = new SqlCommand("SELECT name, surname,imagePath FROM student WHERE student_id = @id", connection);
+            command.Parameters.AddWithValue("@id", student_id);
+            dataReader = command.ExecuteReader();
 
+            if (dataReader.Read())
+            {
+                label1.Text = "HELLO, " +dataReader["name"]+" "+dataReader["surname"];
+                imagePath = dataReader["imagePath"].ToString();
+            }
+            pictureBox1.ImageLocation = imagePath;
+            connection.Close();
         }
     }
 }

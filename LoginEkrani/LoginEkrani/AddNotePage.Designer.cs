@@ -52,11 +52,11 @@ namespace LoginEkrani
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
@@ -240,6 +240,7 @@ namespace LoginEkrani
             this.listView1.TabIndex = 25;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
             // 
             // columnHeader1
@@ -257,6 +258,11 @@ namespace LoginEkrani
             this.columnHeader5.Text = "Student Surname";
             this.columnHeader5.Width = 166;
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Course Name";
+            this.columnHeader3.Width = 200;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -271,9 +277,10 @@ namespace LoginEkrani
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(602, 45);
+            this.pictureBox1.Location = new System.Drawing.Point(521, 49);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(224, 159);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
@@ -293,11 +300,6 @@ namespace LoginEkrani
             this.label5.Size = new System.Drawing.Size(170, 24);
             this.label5.TabIndex = 28;
             this.label5.Text = "Student Final Note:";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Course Name";
-            this.columnHeader3.Width = 200;
             // 
             // textBox5
             // 
@@ -340,7 +342,7 @@ namespace LoginEkrani
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "AddNotePage";
-            this.Text = "AddNotePage";
+            this.Text = "ADD NOTE";
             this.Load += new System.EventHandler(this.AddNotePage_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -26,7 +26,7 @@ namespace LoginEkrani
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            command = new SqlCommand("INSERT INTO course (course_code, course_name, class_capacity) VALUES ('" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + textBox3.Text.ToString() + "')", connection);
+            command = new SqlCommand("INSERT INTO coursee (course_code, course_name, class_capacity) VALUES ('" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + textBox3.Text.ToString() + "')", connection);
             command.ExecuteNonQuery();
             connection.Close();
 
@@ -36,7 +36,7 @@ namespace LoginEkrani
             textBox3.Clear();
             
 
-            MessageBox.Show("Yeni Ders Kaydedildi.");
+            MessageBox.Show("New Course Saved!.");
         }
 
         private void button2_Click(object sender, EventArgs e)

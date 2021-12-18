@@ -42,6 +42,10 @@ namespace LoginEkrani
             this.çıkışToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,12 +152,38 @@ namespace LoginEkrani
             // listView1
             // 
             this.listView1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 217);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(558, 332);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Course ID";
+            this.columnHeader1.Width = 111;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Course Name";
+            this.columnHeader2.Width = 109;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Grade Midterm";
+            this.columnHeader3.Width = 109;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Grade Final";
+            this.columnHeader4.Width = 98;
             // 
             // listofGrades
             // 
@@ -166,7 +196,7 @@ namespace LoginEkrani
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "listofGrades";
-            this.Text = "List of Grades";
+            this.Text = "LIST OF GRADES";
             this.Load += new System.EventHandler(this.listofGrades_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -190,5 +220,9 @@ namespace LoginEkrani
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

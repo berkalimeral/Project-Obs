@@ -139,9 +139,10 @@ namespace LoginEkrani
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(183, 87);
+            this.pictureBox1.Location = new System.Drawing.Point(167, 78);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -149,7 +150,7 @@ namespace LoginEkrani
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(219, 320);
+            this.label1.Location = new System.Drawing.Point(162, 375);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 2;
@@ -166,7 +167,7 @@ namespace LoginEkrani
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "STUDENT PORTAL";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

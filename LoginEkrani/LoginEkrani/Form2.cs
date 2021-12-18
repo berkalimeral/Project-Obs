@@ -56,8 +56,13 @@ namespace LoginEkrani
             {
                 MessageBox.Show("Username or Password Incorrect!");
             }
-
+            connection.Close();
             
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

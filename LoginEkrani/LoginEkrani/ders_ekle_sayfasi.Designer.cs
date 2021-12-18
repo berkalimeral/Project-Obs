@@ -130,7 +130,7 @@ namespace LoginEkrani
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "ders_ekle_sayfasi";
-            this.Text = "ders_ekle_sayfasi";
+            this.Text = "ADD COURSE";
             this.Load += new System.EventHandler(this.ders_ekle_sayfasi_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

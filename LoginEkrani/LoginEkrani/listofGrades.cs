@@ -22,6 +22,8 @@ namespace LoginEkrani
         }
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
         SqlCommand command;
+        SqlDataReader reader;
+        SqlDataReader dataReader;
 
         private void notlarımToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -39,7 +41,7 @@ namespace LoginEkrani
 
         private void devamsızlıkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            attendance attendance= new attendance();
+            attendance attendance= new attendance(student_id);
             attendance.Show();
             this.Hide();
             attendance.Location = this.Location;
@@ -47,7 +49,7 @@ namespace LoginEkrani
 
         private void anaSayfaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form4 anaSayfa = new Form4();
+            Form4 anaSayfa = new Form4(student_id);
             this.Hide();
             anaSayfa.Show();
             anaSayfa.Location = this.Location;
@@ -69,18 +71,18 @@ namespace LoginEkrani
 
 
         }
-       /* public void listele()
+        public void listele()
         {
             listView1.Items.Clear();
             connection.Open();
-            command = new SqlCommand("select course_id, course_name, grade_midterm, grade_final from student_course sc inner join student s on sc.student_number=s.student_id  where id=@id ", connection);
-            command.Parameters.AddWithValue("@id",ogrenci_id);
+            command = new SqlCommand("select distinct sc.course_number, c.course_name, grade_midterm, grade_final from student_course sc inner join coursee c on sc.course_number=c.course_id  where student_number=@id ", connection);
+            command.Parameters.AddWithValue("@id",student_id);
             reader = command.ExecuteReader();
 
             while (reader.Read())
             {
                 ListViewItem item = new ListViewItem();
-                item.Text = reader["course_id"].ToString();
+                item.Text = reader["course_number"].ToString();
                 item.SubItems.Add(reader["course_name"].ToString());
                 item.SubItems.Add(reader["grade_midterm"].ToString());
                 item.SubItems.Add(reader["grade_final"].ToString());
@@ -89,11 +91,21 @@ namespace LoginEkrani
                 listView1.Items.Add(item);
             }
             connection.Close();
-        }*/
+        }
 
         private void listofGrades_Load(object sender, EventArgs e)
         {
-           //listele();
+           listele();
+            connection.Open();
+            command = new SqlCommand("SELECT name, surname FROM student WHERE student_id = @id", connection);
+            command.Parameters.AddWithValue("@id", student_id);
+            dataReader = command.ExecuteReader();
+
+            if (dataReader.Read())
+            {
+                label1.Text = dataReader["name"] + " " + dataReader["surname"];
+            }
+            connection.Close();
         }
 
         private void çıkışYapToolStripMenuItem_Click(object sender, EventArgs e)

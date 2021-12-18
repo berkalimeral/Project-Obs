@@ -29,6 +29,7 @@ namespace LoginEkrani
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-E35HS2M;Initial Catalog=obs;Integrated Security=True");
         SqlCommand command;
         SqlDataReader reader;
+        SqlDataReader dataReader;
 
         private void devamsızlıkToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -81,19 +82,18 @@ namespace LoginEkrani
 
         private void attendance_Load(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
             
             
-            //listView1.Items.Clear();
+            listView1.Items.Clear();
             connection.Open();
-            command = new SqlCommand("select sc.course_id, absance, course_name from student_course sc join course c on sc.course_id = c.course_id where sc.student_number=@id ", connection);
+            command = new SqlCommand("select sc.course_number, absance, course_name from student_course sc join coursee c on sc.course_number = c.course_id where sc.student_number=@id ", connection);
             command.Parameters.AddWithValue("@id", student_id);
             reader = command.ExecuteReader();
 
             while (reader.Read())
             {
                 ListViewItem item = new ListViewItem();
-                item.Text = reader["course_id"].ToString();
+                item.Text = reader["course_number"].ToString();
                 item.SubItems.Add(reader["course_name"].ToString());
                 item.SubItems.Add(reader["absance"].ToString());
 
@@ -101,6 +101,17 @@ namespace LoginEkrani
 
                 listView1.Items.Add(item);
 
+            }
+            connection.Close();
+
+            connection.Open();
+            command = new SqlCommand("SELECT name, surname FROM student WHERE student_id = @id", connection);
+            command.Parameters.AddWithValue("@id", student_id);
+            dataReader = command.ExecuteReader();
+
+            if (dataReader.Read())
+            {
+                label1.Text =  dataReader["name"] + " " + dataReader["surname"];
             }
             connection.Close();
 

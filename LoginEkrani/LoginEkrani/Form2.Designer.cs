@@ -68,6 +68,7 @@ namespace LoginEkrani
             // 
             this.textBox2.Location = new System.Drawing.Point(249, 329);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(180, 20);
             this.textBox2.TabIndex = 10;
             // 
@@ -124,6 +125,7 @@ namespace LoginEkrani
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "ACADEMIST LOG IN";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
